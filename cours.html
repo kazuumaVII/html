@@ -99,9 +99,123 @@ met en evidance une image et mettre un texte -->
 </figure>
 <!-- permet aussi de mettre un titre grace a <figcaption> -->
 
-
-
-
+<!-- balise link permet de linker le lien css a notre page html-->
+<link rel="stylesheet" type="text/css" href="Design/default.css">
+<!-- feuille de style -->
 </body>
-
 </html>
+
+
+
+
+		<!-- DEBUT COURS DE CSS -->
+
+<!-- declarer une propriete -->
+SELECTEUR {
+	propriete: valeur;
+}
+class="bienvenue"
+<!-- doit commentcer par un point en css (.bienvenue) -->
+id="bienvenue"
+<!-- doit commencer par un # (#bienvenue) -->
+<!-- par convention on utilise que une seul fois le id, si plusieur fois utiliser des classs car un ID doit etre unique
+exemple : logo unique, on c'est qu'on en que et et cela va nous permettre de le modif a notre guise  -->
+
+h1, a {
+	color: red;
+}
+<!-- on peu mette plusieur section en une fois -->
+
+p a {
+	color: red
+}
+<!-- tous les a(lien qui sont dans p(paraphraphe)) -->
+
+a[title] {
+	color red;
+}
+<!-- tous les liens qui un attribue title en rouge -->
+a[title ="accueil"] {
+	color red;
+}
+<!-- tous les liens qui un attribue title qui sappel accueil en rouge-->
+
+a[title*="accueil"] {
+	color red;
+}
+<!-- tous les liens qui un attribue title qui commencent par accueil en rouge -->
+
+
+<!-- Modification taille de police -->
+
+<!-- Taille absolue 
+ne prend pas en compte l'utilisateur, pixel -->
+
+ <!-- taille relatif  -->
+<!-- prend en compte l'utilisateur -->
+
+<!-- words :
+		smaLL, xsmaLL, smaLL, mdedium, Large, x-large, xx-Large -->
+	h2 {
+	font-size: small;
+	}
+	
+	<!-- em :
+	1em = taille normal( 1,4em, 2em, 0,5em)  -->
+	h2 {
+	font-size: 1em;
+	}
+
+		<!-- Modele de police -->
+	p {
+		font-family: arial
+	}
+	<!-- paragraphe police en arial -->
+
+p {
+	font-family: policeA, policeB, policeC, sans-serif, serif
+}
+<!-- utiliser police a, si navigateur peu pas police b.... defult : police utiliser par tous(sans srrif arial serif TNR) -->
+
+		<!-- Police personnalisé 
+		1ere methode : telechrarger-->
+<!-- faire un commentaire ou on va mettre nos polices  -->
+@font-face {
+	font-family: 'theblacklist';
+	src: url('../src/theblacklist.ttf') format('truetype'),
+	url('../src/theblacklist.eot') format('eot')'
+	url('../src/theblacklist.svg') format('svg');
+
+
+h1 {
+	font-family: 'theblacklist', arial, sans-serif;
+} 
+<!-- @ : propre a css
+ propriete font family avec le nom de la police
+ src et url ou ce trouve la police puit le format-->
+
+	<!-- 2eme methode ; service propre a ces fonctions (google font) -->
+<!-- <link rel="stylesheet" type="text/css" href="Design/default.css"> -->
+<!-- copier lien de google sur la partie header
+-->
+h2 {
+	font-family: 'Charm', cursive;
+}
+<!-- puis la marquer dans css -->
+
+font-weight: normal;
+font-weight: bolt;
+<!-- Enlever gras, mettre en gras  -->
+
+font-style: italic;
+text-decoration: underline or none;
+<!-- Mettre en ittalic, souligner et enlever soulignage -->
+
+
+				<!-- Allignement -->
+text-align: left, center, right, justify;
+
+
+
+
+
