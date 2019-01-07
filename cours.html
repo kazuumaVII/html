@@ -215,6 +215,124 @@ text-decoration: underline or none;
 				<!-- Allignement -->
 text-align: left, center, right, justify;
 
+<!-- Image flottant -->
+#logo {
+	float: left, right;
+}
+<!-- permet de bouger le logo -->
+h3 {
+	clear: left, right, both;
+}
+<!-- stoper un element flottant (texte h3 ne prend pas en compte lelement flottant
+	right : si les flottant qui sont en dessu on eu valeur right tu ne les ignore pas 
+	both: les deux  que sa soit gauche ou droit tu le prend en compte) -->
+
+
+<!-- modifier fond de lecran -->
+background-color: silver;
+<!-- ou sur selecteur de couleur google -->
+background-color: #dbd9d9;
+background-color: rgb(239, 237, 237)
+
+<!-- Image de fond -->
+background-color: rgb(239, 237, 237, 0.5)
+<!-- transparance allant de 0 à 1 -->
+
+background-image: (copier ladresse de limage sur google)
+<!-- fond du site par rapport a limage -->
+
+background-attachment: scroll, fixed
+<!-- quand on descend (fixed le text bouge, scroll limage bouge en continue) -->
+
+background-repeat: repeat, no repeat
+<!-- repeter limage si elle est trop petite ou pas -->
+
+background-position: 100px 100px;  center center center left ect ect
+<!-- permet de choisir ou le fond decran apparait -->
+
+background: url scroll repeat center center;
+<!-- il faut respecter lordre -->
+
+background: url('htppblabla') no-repeat center, url('blablabla') center;
+<!-- permet de mettre plusieur image (mettre une virgule) -->
+
+
+h1 {
+	opacity: 0,3
+}
+<!-- rentre tranparant un element (prend une valeur de 0 à 1) -->
+
+		<!-- Bordure -->
+h1 {
+	border: largeur couleur type de bordure
+}
+1px black solid
+<!-- border-bottom,lef,right,top (avoir qune partie de bordure) -->
+
+		<!-- Bordure arrondis -->
+border: 1px black solid;
+border-radius: 10px;
+<!-- courbe elipitque (parenthese arrondit sur le cote) -->
+border-radius: 10px / 30px;
+
+<!-- Ombre -->
+box-shadow: DECALAGE HORIZONTAL / VERTICAL / ADOUCISSEMENT / COULEUR
+box-shadow: 3px 10px 0px black;
+<!-- rajouter la propriete "inset" ombre a linterieur (permet de repousser lecran) -->
+
+texte-shadow: 3px 1px 0px silver;
+<!-- permet dajouter de lombre au texte -->
+
+<!-- on peu aussi utiliser les parametre sur un site et faire un lien sur notre text css
+css3gen -->
+
+		<!-- Apparenc dynamique -->
+<!-- quand on passe sur un element -->
+h1:hover {
+	color: red;
+}
+<!-- "bolt" permet de mettre en gras -->
+
+<!-- quand on clique dessus -->
+h1:active{
+	color: red;
+}
+<!-- quand cest un element qui a ete sellectionne (tabulation) -->
+a:focus{
+	color: red;
+}
+<!-- quand sa a deja ete effectué -->
+a:visit{
+	color: red;
+}
+<!-- idit a sert ici a nous dire que cest un lien -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
