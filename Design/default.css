@@ -100,6 +100,12 @@ footer {
 	width: 100px;
 }
 
+#projet {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
 /* CLASSE*/
 .separator{
 	width: 40px;
@@ -113,6 +119,53 @@ footer {
 	width: 80%;
 	margin: auto;
 }
+
+.projet {
+	width: 400px;
+	margin: 30px;
+	display: inline-block; /* mettre les enlement cote a cote et les redimensionner en bloc */
+	background: white;
+	padding-bottom: 15px;
+	border: 0px black solid;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+/*quand la souris va sur mon proejt, afficher ombre designe*/
+.projet:hover {
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	transition: 0.8s;
+}
+
+.projet img {
+	min-width: 400px;
+	height: 266px;
+}
+
+.projet .date-project {
+	font-size: 0.7em;
+}
+
+.projet span {
+	text-transform: uppercase;
+	display: block;
+}
+
+.picture {
+	width: 400px;
+	height: 266px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
 
 /*POLICES*/
 @font-face {
