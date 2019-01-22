@@ -417,6 +417,83 @@ flex: 1, 2, 3;
 
 
 
+<!------------------------------------------------ -->
+				<!-- tableau simple-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>tableaux</title>
+		<style type="text/css">
+			/*permet davoir une seul collone, pour separer valeur par defaut*/
+			table {
+				border-collapse: collapse;
+			}
+
+			td, th {
+				border: 1px black solid;
+				padding: 20px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Balise table(pour dire quon prepare un tableau) -->
+		<table>
+			<tr>
+				<!-- permet de mettre des titres -->
+				<th>Prenom</th>
+				<th>Nom</th>
+			</tr>
+			<!-- ligne du tableau -->
+			<tr>
+				<!-- donne du tableau -->
+				<td>Pierre</td>
+				<td>jack</td>
+			</tr>
+		</table>
+	
+				<!-- TABLEAU COMPLEXE -->
+		
+		<table>
+			<!-- entete du tableau -->
+			<thead>
+				<tr>
+					<th>Prenom</th>
+					<th>Profession</th>
+					<th>Celibataire?</th>
+					<th>Est en couple?</th>
+				</tr>
+			</thead>
+			<!-- corp du tableau -->
+			<tbody>
+				<tr>
+					<td>Pierrre</td>
+					<td>Jardinier</td>
+					<td>oui</td>
+					<td>non</td>
+				</tr>
+				<tr>
+					<td>Yves</td>
+					<td>Politicien</td>
+					<!-- permet doccuper 2 collone -->
+					<td colspan="2">on ne sait pas</td>
+					
+				</tr> 
+			</tbody>
+			<!-- pied du tableau -->
+			<tfoot>
+				<th>Prenom</th>
+				<th>Profession</th>
+				<th>Celibataire?</th>
+				<th>Est en couple?</th>
+			</tfoot>
+		</table>
+
+	</body>
+</html>
+
+
 
 
 

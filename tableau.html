@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>tableaux</title>
+		<style type="text/css">
+			table {
+				border-collapse: collapse;
+				/*caption-side: top, bottom;
+				titre en haut tableau, en bas*/
+			}
+
+			td, th {
+				border: 1px black solid;
+				padding: 20px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+	
+			<thead>
+				<tr>
+					<th>Prenom</th>
+					<th>Profession</th>
+					<th>Celibataire?</th>
+					<th>Est en couple?</th>
+				</tr>
+			</thead>
+		
+			<tbody>
+				<tr>
+					<td>Pierrre</td>
+					<td>Jardinier</td>
+					<td>oui</td>
+					<td>non</td>
+				</tr>
+				<tr>
+					<td>stendhal</td>
+					<td>Ecrivain</td>
+					<td>non</td>
+					<td>non</td>
+				</tr>
+				<tr>
+					<td>Yves</td>
+					<td>Politicien</td>
+					<td colspan="2">on ne sait pas</td>
+					
+				</tr> 
+			</tbody>
+			
+			<tfoot>
+				<th>Prenom</th>
+				<th>Profession</th>
+				<th>Celibataire?</th>
+				<th>Est en couple?</th>
+			</tfoot>
+		</table><br />
+		<!-- le br permet de faire un saut de ligne -->
+		<table>
+			<!-- permet de faire un titre -->
+			<caption>personnage</caption>
+			<tr>
+				<th>Prenom</th>
+				<td>Pierre</td>
+				<td>stendhal</td>
+				<td>yve</td>
+			</tr>
+			<tr>
+				<th>Profession</th>
+				<td>Jardinier</td>
+				<td>ecrivain</td>
+				<td>jardinier</td>
+			</tr>
+			<tr>
+				<th>Est celibataire?</th>
+				<td>oui</td>
+				<td>non</td>
+				<!-- permet de fusioner 2 ligne -->
+				<td rowspan="2">on ne sait pas</td>
+			</tr>
+			<tr>
+				<th>est il en couple?</th>
+				<td>non</td>
+				<td>oui</td>
+			</tr>
+		</table>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
